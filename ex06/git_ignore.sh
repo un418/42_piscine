@@ -1,2 +1,3 @@
-repo_root=$(git rev-parse --show-toplevel)
-find $repo_root -name .gitignore -exec cat -e {} +
+#https://aohorodnyk.com/post/2023-11-28-list-all-ignored-files-in-git/
+#https://explainshell.com/explain?cmd=git+ls-files+--others+--ignored+--exclude-standard
+git ls-files --others --ignored --exclude-standard
