@@ -1,1 +1,1 @@
-id -Gn $FT_USER | column -tdo ',' | cat -e
+id -Gn $FT_USER | sed 's/ /,/g' | tr -d '\n'
