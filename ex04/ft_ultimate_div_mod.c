@@ -6,10 +6,11 @@
 /*   By: adaferna <adaferna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/02 17:53:45 by adaferna          #+#    #+#             */
-/*   Updated: 2026/02/02 18:35:27 by adaferna         ###   ########.fr       */
+/*   Updated: 2026/02/02 18:41:43 by adaferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+// ToDo - Can improve condition and var management
 void	ft_ultimate_div_mod(int *a, int *b)
 {
 	int	division;
