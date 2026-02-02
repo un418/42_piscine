@@ -6,7 +6,7 @@
 /*   By: adaferna <adaferna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/02 15:56:51 by adaferna          #+#    #+#             */
-/*   Updated: 2026/02/02 17:46:24 by adaferna         ###   ########.fr       */
+/*   Updated: 2026/02/02 17:52:36 by adaferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@ void	ft_div_mod(int a, int b, int *div, int *mod)
 	int	modulo;
 
 	division = 0;
+	modulo = 0;
 	if (b != 0)
 	{
 		while (b <= a)
@@ -24,9 +25,9 @@ void	ft_div_mod(int a, int b, int *div, int *mod)
 			division++;
 		}
 		modulo = a;
-		*div = division;
-		*mod = modulo;
 	}
+	*div = division;
+	*mod = modulo;
 }
 
 #include  <stdio.h>
