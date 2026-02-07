@@ -6,7 +6,7 @@
 /*   By: adaferna <adaferna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/03 20:50:29 by adaferna          #+#    #+#             */
-/*   Updated: 2026/02/06 12:42:49 by adaferna         ###   ########.fr       */
+/*   Updated: 2026/02/07 15:24:15 by adaferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,9 +28,9 @@ char	*ft_strcpy(char *dest, char *src)
 #include <unistd.h>
 void	ft_putstr(char *str)
 {
-	// while (*str != '\0')
 	int count = 0;
-	while (count <= 16)
+	// while (*str != '\0')
+	while (count <= 16) // able to see the "aaa" at the end of the string
 	{
 		write(1, str, 1);
 		str++;
@@ -50,7 +50,7 @@ int	main(void)
 	return (0);
 }
 
-/* Tested:
-	- Overflow : Able to copy src[20] to dest [5] // 
-	- src[5] to dest[10] - Able to access what in end of dest
+// Tested:
+// 	- Overflow : Able to copy src[20] to dest [5] // 
+// 	- src[5] to dest[10] - Able to access what in end of dest
 */
