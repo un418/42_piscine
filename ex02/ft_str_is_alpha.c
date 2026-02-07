@@ -6,7 +6,7 @@
 /*   By: adaferna <adaferna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/07 15:28:46 by adaferna          #+#    #+#             */
-/*   Updated: 2026/02/07 15:59:11 by adaferna         ###   ########.fr       */
+/*   Updated: 2026/02/07 16:15:31 by adaferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,11 +29,11 @@ int	main(void)
 {
 	// char str_main[]="aaaaaaaaaaa";
 	// char str_main[]="aaaaaa5aaaaa";
-	char str_main[]="aaaaaa-aaaaa";
+	// char str_main[]="aaaaaa-aaaaa";
+	char str_main[]="";
 	printf("return:%d",ft_str_is_alpha(str_main));
 }
 
 // If str[i] is (outstide a to z) OR (outside A to Z)
 // if ((str[i] < 'a' || str[i] > 'z') || (str[i] < 'A' || str[i] < 'Z'))
-
  */
