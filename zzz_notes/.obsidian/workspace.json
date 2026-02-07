@@ -1,0 +1,214 @@
+{
+  "main": {
+    "id": "b04542f7b5accc16",
+    "type": "split",
+    "children": [
+      {
+        "id": "45066b080eb426ce",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "811d3be28a6dd911",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Git.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Git"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "5233488b4f6b332d",
+    "type": "split",
+    "children": [
+      {
+        "id": "c2f8a37c8bddb5e4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f5f4f694f78297b2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "b157baf34ddcbd80",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "39e1957c875e5d81",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "fb71ae6ee31f1a19",
+    "type": "split",
+    "children": [
+      {
+        "id": "fdfea2bc7c58902a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9fb3d70699c49a63",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "sh01.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for sh01"
+            }
+          },
+          {
+            "id": "ea476a0807d30e44",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "C Lang/c_lang_pointer.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from c_lang_pointer"
+            }
+          },
+          {
+            "id": "478a01b8395320b5",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "54ce0cf5a54f87b4",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "615a6e51ed3f8d9b",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "sh01.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of sh01"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "811d3be28a6dd911",
+  "lastOpenFiles": [
+    "ToDo/notes.md",
+    "ToDo/doc.md",
+    "Git.md",
+    "Git Subtree - WIP.md",
+    "ToDo/sh01.md",
+    "C Lang/c_lang_pointer.md",
+    "ToDo/42.md",
+    "ToDo/42_README.md",
+    "ToDo/awesome42.md",
+    "ToDo/eu_aceito_lisboa.md",
+    "ToDo/next.md",
+    "ToDo/sh00.md",
+    "C Lang/c_array.md",
+    "C Lang/c_lang_101.md",
+    "~assets/Pasted image 20260204175207.png",
+    "Assets/Untitled 2",
+    "Assets/Untitled 1",
+    "Assets/Untitled",
+    "~assets",
+    "~assets/Pasted image 20260204161801.png",
+    "~assets/Pasted image 20260204161539.png",
+    "C Lang",
+    "ToDo",
+    "2026-01-30.md"
+  ]
+}

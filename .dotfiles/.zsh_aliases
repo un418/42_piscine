@@ -1,0 +1,17 @@
+# path:$ZSH_CUSTOM/aliases.zsh
+
+# Custom Alias
+alias cc42='cc -g -Wall -Wextra -Werror *.c'                   # Work only if only one .c file on folder
+alias ccrun42='cc -g -Wall -Wextra -Werror *.c && ./a.out'  # Work only if only one .c file on folder
+alias normi42='norminette -R CheckForbiddenSourceHeader'
+
+alias gcc42='gcc -g -Wall -Wextra -Werror *.c'                   # Work only if only one .c file on folder
+alias gccrun42='gcc -g -Wall -Wextra -Werror *.c && ./a.out'  # Work only if only one .c file on folder
+
+# Usefull alias from omz
+## git plugin
+## glola -> git log -> oneliner + pretty print
+## ga -> git add
+## gst - git status
+## gcmsg -> git commit -m "$1"
+## gpl -> git

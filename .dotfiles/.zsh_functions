@@ -1,0 +1,38 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    .zsh_functions                                     :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: adaferna <adaferna@student.42.fr>          +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2026/01/29 15:46:06 by adaferna          #+#    #+#              #
+#    Updated: 2026/02/04 20:43:02 by adaferna         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+test_42() {
+    (   # Create a subshell to manage errors
+        set -e
+        echo "\n---- C Lang 42 Tester  ----"
+        echo "## norminette ##";
+        norminette
+        echo ""
+        echo "## compilation ##"
+        cc -o exe.o *.c # WARN:work only for one file at the moment
+        echo "## compilation -> OK ##"
+        echo ""
+        echo "## Run file -> exe.o ##" 
+        ./exe.o
+        echo "\n"
+    )
+}
+
+mkcd() {
+    mkdir -p "$1"
+    cd "$1"
+}
+
+git_remote_change() {
+	git remote add "origin" "$1"
+	git remote set-url "origin" "$1"
+}
