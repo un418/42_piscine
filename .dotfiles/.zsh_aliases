@@ -1,3 +1,15 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    .zsh_aliases                                       :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: adaferna <adaferna@student.42.fr>          +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2026/02/09 13:03:19 by adaferna          #+#    #+#              #
+#    Updated: 2026/02/09 13:08:11 by adaferna         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 # path:$ZSH_CUSTOM/aliases.zsh
 
 # Custom Alias
@@ -8,10 +20,9 @@ alias normi42='norminette -R CheckForbiddenSourceHeader'
 alias gcc42='gcc -g -Wall -Wextra -Werror *.c'                   # Work only if only one .c file on folder
 alias gccrun42='gcc -g -Wall -Wextra -Werror *.c && ./a.out'  # Work only if only one .c file on folder
 
-# Usefull alias from omz
-## git plugin
+# Usefull alias from omz git plugin
 ## glola -> git log -> oneliner + pretty print
 ## ga -> git add
 ## gst - git status
 ## gcmsg -> git commit -m "$1"
-## gpl -> git
+## gpl -> git push
