@@ -8,20 +8,61 @@
         "type": "tabs",
         "children": [
           {
-            "id": "811d3be28a6dd911",
+            "id": "fe735c4a803bb5a3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Git.md",
+                "file": "Shell/Git.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
               "title": "Git"
             }
+          },
+          {
+            "id": "46e7d8432b151ace",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Shell/shell_101.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "shell_101"
+            }
+          },
+          {
+            "id": "488638a8b131e183",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ToDo/sh01.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "sh01"
+            }
+          },
+          {
+            "id": "edcb8475945d633a",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/basic_array.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "basic_array.excalidraw"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -78,7 +119,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 474.5
   },
   "right": {
     "id": "fb71ae6ee31f1a19",
@@ -181,32 +222,40 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "bases:Create new base": false,
+      "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "811d3be28a6dd911",
+  "active": "46e7d8432b151ace",
   "lastOpenFiles": [
-    "ToDo/notes.md",
-    "ToDo/doc.md",
-    "Git.md",
-    "Git Subtree - WIP.md",
-    "ToDo/sh01.md",
-    "C Lang/c_lang_pointer.md",
     "ToDo/42.md",
-    "ToDo/42_README.md",
-    "ToDo/awesome42.md",
-    "ToDo/eu_aceito_lisboa.md",
     "ToDo/next.md",
+    "ToDo/doc.md",
+    "ToDo/42_README.md",
+    "Shell/shell_101.md",
+    "ToDo/notes.md",
+    "ToDo/sh01.md",
     "ToDo/sh00.md",
-    "C Lang/c_array.md",
+    "ToDo/eu_aceito_lisboa.md",
+    "ToDo/awesome42.md",
+    "Shell/Git Subtree - WIP.md",
+    "Shell/Git.md",
+    "Shell",
+    "C Lang/c_lang_pointer.md",
     "C Lang/c_lang_101.md",
-    "~assets/Pasted image 20260204175207.png",
+    "C Lang/c_array.md",
+    "Excalidraw/reverse_a_string.excalidraw.md",
+    "Excalidraw/basic_array.excalidraw.md",
+    "Excalidraw",
+    "Untitled.base",
+    "Untitled 1.base",
+    "~assets/basic_git_diagram.png",
+    "~assets/c_lang_function_terminology.png",
+    "~assets/c_lang_101_terminology.png",
     "Assets/Untitled 2",
     "Assets/Untitled 1",
     "Assets/Untitled",
     "~assets",
-    "~assets/Pasted image 20260204161801.png",
-    "~assets/Pasted image 20260204161539.png",
     "C Lang",
     "ToDo",
     "2026-01-30.md"

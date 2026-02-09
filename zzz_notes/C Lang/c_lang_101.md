@@ -1,6 +1,6 @@
 # Terminology
 
-![[Pasted image 20260204161801.png]]
+![[c_lang_101_terminology.png]]
 
 # Variables
 ## Variables Types
