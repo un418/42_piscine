@@ -62,16 +62,6 @@
             }
           },
           {
-            "id": "488638a8b131e183",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
-            }
-          },
-          {
             "id": "edcb8475945d633a",
             "type": "leaf",
             "state": {
@@ -250,8 +240,9 @@
   },
   "active": "838e604f582aab5c",
   "lastOpenFiles": [
-    "~assets/c_lang_101_terminology.png",
     "Excalidraw/basic_array.excalidraw.md",
+    "C Lang/c_lang_101.md",
+    "~assets/c_lang_101_terminology.png",
     "Excalidraw/reverse_a_string.excalidraw.md",
     "Shell/Git.md",
     "~assets/basic_git_diagram.png",
@@ -275,7 +266,6 @@
     "C Lang/c_lang_pointer.md",
     "ToDo/eu_aceito_lisboa.md",
     "Shell",
-    "C Lang/c_lang_101.md",
     "~Excalidraw",
     "Untitled.base",
     "Untitled 1.base",
