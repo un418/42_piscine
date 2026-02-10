@@ -6,7 +6,7 @@
 /*   By: adaferna <adaferna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/09 17:56:45 by adaferna          #+#    #+#             */
-/*   Updated: 2026/02/10 14:19:03 by adaferna         ###   ########.fr       */
+/*   Updated: 2026/02/10 14:42:53 by adaferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,13 @@ strcmp() returns an integer indicating the result of the comparison, as follows
        • a positive value if s1 is greater than s2.
 The strncmp() function is similar,
 except it compares only the first (at most) n bytes of s1 and s2.
+*/
+
+/* 
+NOTE
+Always be carefull with index
+- always start at 0
+- never should be negative -> seg fault
 */
 
 int	ft_strncmp(char *s1, char *s2, unsigned int n)
@@ -49,19 +56,19 @@ int main(void)
 {
 	// https://www.ascii-code.com/
 
-	// char str1[]="Hello";
-	// char str2[]="Hello";
-	// unsigned int n = 3;
+	char str1[]="Hello";
+	char str2[]="Hello";
+	unsigned int n = 5;
 	// 0
 
 	// char str1[]="Hello0";
 	// char str2[]="Hello";
 	// unsigned int n = 4;
-	// 48
+	// 0
 
-	char str1[]="Hello";
-	char str2[]="Hello0";
-	unsigned int n = 5;
+	// char str1[]="Hello";
+	// char str2[]="Hello0";
+	// unsigned int n = 5;
 	// -48
 
 	// char str1[]="";
@@ -71,8 +78,8 @@ int main(void)
 
 	// char str1[]="H";
 	// char str2[]="";
-	// unsigned int n = 1;
-	// 72
+	// unsigned int n = 0;
+	// 0
 
 	// char str1[]="";
 	// char str2[]="q";
