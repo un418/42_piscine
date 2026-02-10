@@ -6,11 +6,10 @@
 # Basics
 
 
-- `git add <file/folder>` `git rm <file/folder>`
+- `git add <file/folder>` 
+- `git rm <file/folder>`
 - `git status`
 - `git commit -m "add file.txt"`
-
-
 - `git log`
 - `git restore`: Restore a file after a `git rm`
 
@@ -44,14 +43,14 @@ remote :
 
 ## ToDo - Alias / Function 
 
-```bash
-git remote add "origin" git@vogsphere.42lisboa.com:vogsphere/intra-uuid-ffd5d467-e919-4a24-854f-64e29b5ee192-7207397-adaferna
-git remote set-url "origin" git@vogsphere.42lisboa.com:vogsphere/intra-uuid-ffd5d467-e919-4a24-854f-64e29b5ee192-7207397-adaferna
-```
+
+### Alias to change the remote repository url
+
+Used when retrying a project
 
 ```bash
 _git_remote_change (
-	git remote add "origin" $1 && /
+	git remote add "origin" $1
 	git remote set-url "origin" $1
 )
 ```
