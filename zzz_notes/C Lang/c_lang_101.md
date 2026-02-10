@@ -1,7 +1,7 @@
 # Terminology
 
 
-![image info](./zzz_notes/~assets/c_lang_101_terminology.png)
+![image info](/zzz_notes/~assets/c_lang_101_terminology.png)
 
 # Variables
 ## Variables Types
