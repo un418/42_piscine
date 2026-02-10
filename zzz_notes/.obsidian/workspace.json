@@ -53,26 +53,22 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "42/Exam_Survival_Guide.md",
+                "file": "C Lang/c_lang_101.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Exam_Survival_Guide"
+              "title": "c_lang_101"
             }
           },
           {
             "id": "488638a8b131e183",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ToDo/sh01.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "sh01"
+              "title": "New tab"
             }
           },
           {
@@ -254,15 +250,18 @@
   },
   "active": "838e604f582aab5c",
   "lastOpenFiles": [
+    "~assets/c_lang_101_terminology.png",
+    "Excalidraw/basic_array.excalidraw.md",
+    "Excalidraw/reverse_a_string.excalidraw.md",
+    "Shell/Git.md",
+    "~assets/basic_git_diagram.png",
+    "basic_git_diagra[[basic_git_diagram.png.md",
+    "Shell/Git Subtree - WIP.md",
+    "42/Exam_Survival_Guide.md",
     "ToSort/42.md",
     "ToSort/notes.md",
     "Shell/shell_101.md",
-    "Shell/Git Subtree - WIP.md",
-    "42/Exam_Survival_Guide.md",
-    "Shell/Git.md",
     "Excalidraw/Drawing 2026-02-10 18.51.24.excalidraw.md",
-    "Excalidraw/basic_array.excalidraw.md",
-    "Excalidraw/reverse_a_string.excalidraw.md",
     "Excalidraw",
     "42",
     "ToSort/42_README.md",
@@ -280,9 +279,7 @@
     "~Excalidraw",
     "Untitled.base",
     "Untitled 1.base",
-    "~assets/basic_git_diagram.png",
     "~assets/c_lang_function_terminology.png",
-    "~assets/c_lang_101_terminology.png",
     "Assets/Untitled 2",
     "Assets/Untitled 1",
     "Assets/Untitled",

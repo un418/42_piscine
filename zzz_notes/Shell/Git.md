@@ -1,7 +1,4 @@
-![[basic_git_diagram.png]]
-
-
-
+![[~assets/basic_git_diagram.png]]
 
 # Basics
 
@@ -44,9 +41,9 @@ remote :
 ## ToDo - Alias / Function 
 
 
-### Alias to change the remote repository url
+### Alias to change the remote repo url
 
-Used when retrying a project
+Mainly used when retrying a project
 
 ```bash
 _git_remote_change (

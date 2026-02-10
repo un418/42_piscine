@@ -1,6 +1,6 @@
 # Terminology
 
-![[c_lang_101_terminology.png]]
+![[~assets/c_lang_101_terminology.png]]]
 
 # Variables
 ## Variables Types

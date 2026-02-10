@@ -23,6 +23,9 @@
 > You entered the exam no one will kick you out of it.
 > You got 4h hours to beat the `grademe` command
 
+2. Just after login successfully the script will create your ssh key for the exam
+		type : `y` when there is some questions
+		
 3. `examshell` subcommand
 	- `grademe` : When you sure you finished your exercise to send it to Moulinette, be graded and access the next exercise
 	- `status`:
