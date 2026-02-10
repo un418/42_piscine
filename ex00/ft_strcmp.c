@@ -6,28 +6,27 @@
 /*   By: adaferna <adaferna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/09 17:56:10 by adaferna          #+#    #+#             */
-/*   Updated: 2026/02/09 20:33:41 by adaferna         ###   ########.fr       */
+/*   Updated: 2026/02/10 13:39:55 by adaferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /* 
 DESCRIPTION
-       The  strcmp() function compares the two strings s1 and s2.  The locale is not taken into account (for a
-       locale-aware comparison, see strcoll(3)).  The comparison is done using unsigned characters.
-
-       strcmp() returns an integer indicating the result of the comparison, as follows:
-
+strcmp() returns an integer indicating the result of the comparison, as follows
        • 0, if the s1 and s2 are equal;
        • a negative value if s1 is less than s2;
        • a positive value if s1 is greater than s2.
-
-       The strncmp() function is similar, except it compares only the first (at most) n bytes of s1 and s2.
-
+The strncmp() function is similar,
+except it compares only the first (at most) n bytes of s1 and s2.
 */
 
 int	ft_strcmp(char *s1, char *s2)
 {
-	int i_s1,i_s2,s1_sum,s2_sum,diff;
+	int	i_s1;
+	int	i_s2;
+	int	s1_sum;
+	int	s2_sum;
+	int	diff;
 
 	i_s1 = 0;
 	i_s2 = 0;
@@ -40,20 +39,41 @@ int	ft_strcmp(char *s1, char *s2)
 	}
 	while (s2[i_s2])
 	{
-		s2_sum = s2_sum + s2[i_s1];
+		s2_sum = s2_sum + s2[i_s2];
 		i_s2++;
 	}
 	diff = s1_sum - s2_sum;
-	return(diff);
+	return (diff);
 }
-
+/* 
 #include <stdio.h>
 int main(void)
 {
-	char str1[]="H";
-	char str2[]="H";
+	// char str1[]="Hello";
+	// char str2[]="Hello";
+	// 0
 
-	// ft_strcmp(str1,str2);
+	// char str1[]="Hello0";
+	// char str2[]="Hello";
+	// 48
+
+	// char str1[]="Hello";
+	// char str2[]="Hello0";
+	// -48
+
+	// char str1[]="";
+	// char str2[]="";
+	// 0
+
+	// char str1[]="H";
+	// char str2[]="";
+	// 72
+
+	char str1[]="";
+	char str2[]="~";
+	// -126
+
 	printf("debug:%d",ft_strcmp(str1,str2));
 	return 0;
 }
+ */
