@@ -13,7 +13,8 @@
 * https://www.w3schools.com/c/c_pointers_arrays.php
 
 
-> [!NOTE] in C, the **name of an array**, is actually a **pointer** to the **first element** of the array.
+> [!NOTE] 
+> In C, the **name of an array**, is actually a **pointer** to the **first element** of the array.
 ```c
 #include <stdio.h>
 int main() {

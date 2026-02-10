@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Shell/shell_101.md",
+                "file": "42/Exam_Survival_Guide.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "shell_101"
+              "title": "Exam_Survival_Guide"
             }
           },
           {
@@ -228,25 +228,28 @@
   },
   "active": "46e7d8432b151ace",
   "lastOpenFiles": [
-    "ToDo/42.md",
+    "ToSort/42.md",
+    "42/Exam_Survival_Guide.md",
+    "42",
+    "ToSort/42_README.md",
+    "ToSort/sh01.md",
+    "ToSort/sh00.md",
+    "ToSort/awesome42.md",
+    "ToSort/notes.md",
     "ToDo/next.md",
-    "ToDo/doc.md",
-    "ToDo/42_README.md",
-    "Shell/shell_101.md",
-    "ToDo/notes.md",
-    "ToDo/sh01.md",
-    "ToDo/sh00.md",
-    "ToDo/eu_aceito_lisboa.md",
-    "ToDo/awesome42.md",
-    "Shell/Git Subtree - WIP.md",
     "Shell/Git.md",
-    "Shell",
-    "C Lang/c_lang_pointer.md",
-    "C Lang/c_lang_101.md",
+    "ToDo/doc.md",
     "C Lang/c_array.md",
-    "Excalidraw/reverse_a_string.excalidraw.md",
-    "Excalidraw/basic_array.excalidraw.md",
-    "Excalidraw",
+    "C Lang/c_lang_debug.md",
+    "C Lang/c_lang_pointer.md",
+    "Shell/shell_101.md",
+    "ToDo/eu_aceito_lisboa.md",
+    "Shell/Git Subtree - WIP.md",
+    "Shell",
+    "C Lang/c_lang_101.md",
+    "~Excalidraw/reverse_a_string.excalidraw.md",
+    "~Excalidraw/basic_array.excalidraw.md",
+    "~Excalidraw",
     "Untitled.base",
     "Untitled 1.base",
     "~assets/basic_git_diagram.png",
@@ -257,7 +260,6 @@
     "Assets/Untitled",
     "~assets",
     "C Lang",
-    "ToDo",
     "2026-01-30.md"
   ]
 }
