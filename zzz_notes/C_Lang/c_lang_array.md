@@ -20,6 +20,7 @@
 > - `char str[10]="123456789";`
 > - `char str[]="123456789";`  --> Let the compiler detect the size of the array needed
 
+* String vs array subtility : https://www.sanfoundry.com/c-tutorials-difference-between-character-array-string-literal/
 * https://www.geeksforgeeks.org/c/how-to-convert-a-string-to-a-char-array-in-c/
 ### Octal in C
 * https://www.geeksforgeeks.org/c/octal-numbers-c/
