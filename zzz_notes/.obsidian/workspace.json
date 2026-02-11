@@ -51,12 +51,14 @@
             "id": "838e604f582aab5c",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "~assets/c_lang_101_terminology.png"
+                "file": "C Lang/c_lang_array.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "c_lang_101_terminology"
+              "icon": "lucide-file",
+              "title": "c_lang_array"
             }
           },
           {
@@ -236,14 +238,16 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "838e604f582aab5c",
+  "active": "f5f4f694f78297b2",
   "lastOpenFiles": [
-    "~assets/basic_git_diagram.png",
+    "C Lang/c_lang_pointer.md",
+    "C Lang/c_lang_101.md",
+    "C Lang/c_lang_debug.md",
     "~assets/c_lang_101_terminology.png",
+    "~assets/basic_git_diagram.png",
     "ToSort/notes.md",
     "basic_git_diagra[[basic_git_diagram.png.md",
     "Excalidraw/basic_array.excalidraw.md",
-    "C Lang/c_lang_101.md",
     "Excalidraw/reverse_a_string.excalidraw.md",
     "Shell/Git.md",
     "Shell/Git Subtree - WIP.md",
@@ -259,9 +263,7 @@
     "ToSort/awesome42.md",
     "ToDo/next.md",
     "ToDo/doc.md",
-    "C Lang/c_array.md",
-    "C Lang/c_lang_debug.md",
-    "C Lang/c_lang_pointer.md",
+    "C Lang/c_lang_array.md",
     "ToDo/eu_aceito_lisboa.md",
     "Shell",
     "~Excalidraw",
