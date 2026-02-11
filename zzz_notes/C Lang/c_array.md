@@ -1,5 +1,6 @@
 ## Strings - Array of Char
 * https://www.geeksforgeeks.org/c/how-to-convert-a-string-to-a-char-array-in-c/
+* String vs array subtility : https://www.sanfoundry.com/c-tutorials-difference-between-character-array-string-literal/
 ### Octal in C
 * https://www.geeksforgeeks.org/c/octal-numbers-c/
 # Iteration over an array
