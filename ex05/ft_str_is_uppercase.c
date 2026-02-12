@@ -6,7 +6,7 @@
 /*   By: adaferna <adaferna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/07 16:45:22 by adaferna          #+#    #+#             */
-/*   Updated: 2026/02/12 14:53:11 by adaferna         ###   ########.fr       */
+/*   Updated: 2026/02/12 15:56:33 by adaferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ int	ft_str_is_uppercase(char *str)
 	return (1);
 }
 
-
+/* 
 #include <stdio.h>
 int	main(void)
 {
@@ -40,7 +40,7 @@ int	main(void)
 	// char str_main[]="";
 	printf("return:%d",ft_str_is_uppercase(str_main));
 }
-
+ */
 // Before Yoda
 // if (str[i] < 'A' || str[i] > 'Z')
 // if item is inferior to 'A' OR superior to 'Z'
