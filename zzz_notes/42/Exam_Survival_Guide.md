@@ -28,8 +28,40 @@
 		
 3. `examshell` subcommand
 	- `grademe` : When you sure you finished your exercise to send it to Moulinette, be graded and access the next exercise
-	- `status`:
-	- `finish`: When you have finish the exam and are ready to leave
+	- `status`: used to know how many time left to finish the exam
+	- `finish`: /!\ Dangerous /!\ - When you have finish the exam and are ready to leave
+### 3. Do your exercise
+
+You will find the subject in the folder : `/exam/subject/<exercice_name>/<exercice_name>.txt`
+
+> [!CAUTION] 
+> You must git push the result of your exercise with the same structure but in `/exam/rendu`
+> ```
+> /exam/subject/print_a/print_a.txt
+> /exam/rendu/print_a/print_a.c
+> ```
+
+push file to git when you finished the exercise.
+
+After `git push` :
+	go to the terminal were you have you `examshell` still running
+		use the command  `grademe`
+		
+```c
+if (exercise correct)
+	`grademe` give you another exercise to do in /exam/rendu
+else
+	{
+		fix your code;
+		push change to git;
+		`examshell` -> `grademe` 
+	}
+```
+
+
+> [!TIP] 
+> If you fail a `grademe`
+> You can find useful debug information in `/exam/traces`
 
 ## Survival commands
 
@@ -37,12 +69,25 @@
 
 ```bash
 man -k write    # Command to search a pattern of text in all manuals
-man -k printf
+man -k pointer  # Not sure you will find but at least try
 
-man 2 write     # The include definition are in the man
-man 3 printf
+man 2 write     # contains the  #include <unistd.h>
+man 3 printf    # contains the  #include <stdio.h>
+man 2 execve    # usefull snippets of 'main(int argc, char *argv[])' at the end of the page
 ```
 
+### Git Basics
+```bash
+# Example with /exam/rendu/print_a/print_a.c
+
+cd /exam/rendu/print_a
+git add print_a.c
+git commit -m "add print_a.c"
+git push
+# If needed
+git remove --cached <fileToRemove> #from git  repository
+# still need to commit and push the deletion to the remote repo
+```
 ## 42_header
 
 Use VIM to put them
@@ -53,7 +98,7 @@ Use VIM to put them
 > Norminette checks the validity of header
 > If you don't put them, the `grademe` command will never let you moving forward !
 
-
+Source : https://github.com/42paris/42header
 ## ~/.zshrc
 
 ```bash
@@ -62,21 +107,22 @@ alias cc42='cc -g -Wall -Wextra -Werror *.c' #
 alias ccrun42='cc -g -Wall -Wextra -Werror *.c && ./a.out' 
 alias normi42='norminette -R CheckForbiddenSourceHeader'
 
-# To put your mail and username automaticly
-export USER=<username>
-export MAIL=<42email>
-
 # Allow more history size
 export HISTSIZE=10000 
 export SAVEHIST=10000
+
+# Not Tested for the moment - To improve zsh prompt - 
+# Find some interesting pattern here : 
+# /etc/profiles , /etc/zsh/newuser.zshrc.recommended , cat /etc/bash.bashrc 
+
+# ---------------------------------------------------------------------------#
+					# Less Usefull but good to know  #
+
+# Note usefull because not tested via Norminette and Moulinette
+# To put your mail and username automaticly in the 42 Header with vim shortcut
+export USER=<username>
+export MAIL=<42email>
  
-
-# Little function 
-mkcd() {
-	mkdir -p "$1"
-	cd "$1"
-}
-
 # Less usefull aliases 
 alias gcc42='gcc -g -Wall -Wextra -Werror *.c'
 alias gccrun42='gcc -g -Wall -Wextra -Werror *.c && ./a.out'
@@ -85,8 +131,7 @@ alias ga="git add"
 alias gst="git status"
 alias gcmsg="git commit -m"
 alias gp="git push"
-
-
-
-
+alias gl1="git log --oneline"
 ```
+
+## ~/.vimrc

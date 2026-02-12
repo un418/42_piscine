@@ -9,7 +9,6 @@
 
 
 
-
 # RTFM
 - https://dev.to/randazraik/the-ultimate-cheat-sheet-cli-man-pages-tldr-and-cheatsh-19bc
 - https://towardsdev.com/getting-help-in-linux-man-help-and-info-commands-explained-cf75c65989d2
@@ -25,10 +24,17 @@ man 2 write #
 
 ## Functions
 
-## next function - WIP
+## next function - WIP/Draft
 ```bash
-1. Validate the name of $pwd
+# function to move to the next exercise
+# 1. Validate the name of $pwd is a folder exercise
+# 2. Parse number in the folder name
+# 3. Increment this number
+# 4. cd to the next exercise
+
    
-`echo "$pwd" | grep 'ex(\d{2})'`
+#`echo "$pwd" | grep 'ex(\d{2})'`
+(pwd | grep 'ex(\d{2})') || 
+
 
 ```
