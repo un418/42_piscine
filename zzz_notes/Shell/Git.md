@@ -1,4 +1,4 @@
-![[~assets/basic_git_diagram.png]]
+![[zzz_notes/~assets/basic_git_diagram.png]]
 
 # Basics
 
@@ -22,6 +22,14 @@ git reset --hard #<commit_id>#  # Will reset the branch to the specified commit
 git push -f # Need -f --force if the commit have been already pushed to remote repo.
 ```
 
+### Modify last commit
+
+```bash
+git add <file>
+git commit --amend --no-edit
+git push
+# git push --force if already pushed on remote
+```
 # Change remote
 
 ```bash

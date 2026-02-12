@@ -1,34 +1,14 @@
 # Basics
-
-![[c-array-declaration.webp]]
-
+![image info](/zzz_notes/~assets/c-array-declaration.webp)
 
 > [!Waning] 
 > Array Size = 5
 > Max index = 4 because index begin at 0
 
 
-# Strings = Array of Char
-
-
-> [!CAUTION] 
-> Be careful when declaring array
-> You must remind to assign one bit more for the `\0` character that symbolize the end of the string
-> `char str[9]="123456789";` will not be null terminated
-> So the pattern `while (str[i] = '\0')` or `while (str[i])` will never find the end of the string and the program will crash #segfault
-> Must be :
-> - `char str[10]="123456789";`
-> - `char str[]="123456789";`  --> Let the compiler detect the size of the array needed
-
-* String vs array subtility : https://www.sanfoundry.com/c-tutorials-difference-between-character-array-string-literal/
-* https://www.geeksforgeeks.org/c/how-to-convert-a-string-to-a-char-array-in-c/
-### Octal in C
-* https://www.geeksforgeeks.org/c/octal-numbers-c/
-
 # Pointer and array
 
 * https://www.w3schools.com/c/c_pointers_arrays.php
-
 
 > [!TIP] 
 > In C, the **name of an array**, is actually a **pointer** to the **first element** of the array.
@@ -49,6 +29,21 @@ int main() {
 }
 ```
 
+# Strings (Array of Char)
+
+> [!CAUTION] 
+> Be careful when declaring array
+> You must remind to assign one bit more for the `\0` character that symbolize the end of the string
+> `char str[9]="123456789";` will not be null terminated
+> So the pattern `while (str[i] = '\0')` or `while (str[i])` will never find the end of the string and the program will crash #segfault
+> Must be :
+> - `char str[10]="123456789";`
+> - `char str[]="123456789";`  --> Let the compiler detect the size of the array needed
+
+* String vs array subtility : https://www.sanfoundry.com/c-tutorials-difference-between-character-array-string-literal/
+* https://www.geeksforgeeks.org/c/how-to-convert-a-string-to-a-char-array-in-c/
+### Octal representation of Char
+* https://www.geeksforgeeks.org/c/octal-numbers-c/
 
 # Code Patterns
 ## Iteration over an array

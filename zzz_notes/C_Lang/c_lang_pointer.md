@@ -22,7 +22,8 @@ ptr_n = &n; // store the address of var n of type int in var pointer of type int
 
 
 
-> [!NOTE] Memo
+> [!NOTE] 
+> Memo 
 ```c
 int *ptr; //We use * at declaration to indicate that this is a pointer
 
@@ -41,12 +42,6 @@ Because if  a variable is defined in the `main` , it not exist in the `subfoncti
 
 If we want to manipulate the data of a variable from `main` in a `subfunction`.
 A good option is to send the pointer of this variable as an argument (input) of a `subfunction`, then in the `subfunction` we can access the data via `referencing` and store new value by `dereferencing` to pointer passed as argument.
-
-   ```
-   # Draft
-   No string() datatypes in C. They are managed by pointers.
-   
-   ```
 
 # String
 
