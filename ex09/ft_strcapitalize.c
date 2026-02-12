@@ -6,7 +6,7 @@
 /*   By: adaferna <adaferna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/07 18:41:24 by adaferna          #+#    #+#             */
-/*   Updated: 2026/02/12 15:37:26 by adaferna         ###   ########.fr       */
+/*   Updated: 2026/02/12 16:02:06 by adaferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,8 @@ and converts all other letters to lowercase.
 
 char	*ft_strcapitalize(char *str)
 {
-	int	i;
-	bool first_letter;
+	int		i;
+	bool	first_letter;
 
 	i = 0;
 	first_letter = true;
