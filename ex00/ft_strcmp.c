@@ -6,7 +6,7 @@
 /*   By: adaferna <adaferna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/09 17:56:10 by adaferna          #+#    #+#             */
-/*   Updated: 2026/02/10 13:46:22 by adaferna         ###   ########.fr       */
+/*   Updated: 2026/02/12 16:15:44 by adaferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ except it compares only the first (at most) n bytes of s1 and s2.
 int	ft_strcmp(char *s1, char *s2)
 {
 	int	i;
-	int diff;
+	int	diff;
 
 	i = 0;
 	diff = 0;
@@ -40,7 +40,7 @@ int	ft_strcmp(char *s1, char *s2)
 	}
 	return (diff);
 }
-
+/* 
 #include <stdio.h>
 int main(void)
 {
@@ -71,3 +71,4 @@ int main(void)
 	printf("debug:%d",ft_strcmp(str1,str2));
 	return 0;
 }
+ */
