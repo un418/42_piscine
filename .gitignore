@@ -27,6 +27,5 @@ C09/
 
 
 
-
 # Ignored files can be tested this way
-# git ls-files --others --ignored --exclude-standard
+# git ls-files --others --ignored --exclude-standard~
