@@ -1,4 +1,4 @@
-```
+```bash
 mkdir Rush02
 cd Rush02
 git init
@@ -8,7 +8,9 @@ git pull
 
 
 
-# Change Branch -
+# Create Branch 
 git checkout -B adaferna
+# change branch 
+git checkout adaferna
 
 ```
