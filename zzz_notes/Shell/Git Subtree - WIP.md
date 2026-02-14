@@ -32,18 +32,29 @@ git subtree add --prefix SH00_Project/SH00 ../piscine_42/SH00_Project/SH00 maste
 git subtree pull --prefix SH00_Project/SH00 ../piscine_42/SH00_Project/SH00 master
 
 git subtree add --prefix SH01_Project/SH01 ../piscine_42/SH01_Project/SH01 master
-git subtree add --prefix C00_Project/C00 ../piscine_42/C00_Project/C00 master
-git subtree add --prefix C01_Project/C01 ../piscine_42/C01_Project/C01 master
-git subtree add --prefix C02_Project/C02 ../piscine_42/C02_Project/C02 master
-git subtree add --prefix C03_Project/C03 ../piscine_42/C03_Project/C03 master
+git subtree pull --prefix SH01_Project/SH01 ../piscine_42/SH01_Project/SH01 master
 
-#
+git subtree add --prefix C00_Project/C00 ../piscine_42/C00_Project/C00 master
+git subtree pull --prefix C00_Project/C00 ../piscine_42/C00_Project/C00 master
+
+git subtree add --prefix C01_Project/C01 ../piscine_42/C01_Project/C01 master
+git subtree pull --prefix C01_Project/C01 ../piscine_42/C01_Project/C01 master
+
+git subtree add --prefix C02_Project/C02 ../piscine_42/C02_Project/C02 master
 git subtree pull --prefix C02_Project/C02 ../piscine_42/C02_Project/C02 master
+
+git subtree add --prefix C03_Project/C03 ../piscine_42/C03_Project/C03 master
+git subtree pull --prefix C03_Project/C03 ../piscine_42/C03_Project/C03 master
+
+git subtree add --prefix C04_Project/C04 ../piscine_42/C03_Project/C04 master
+git subtree pull --prefix C03_Project/C04 ../piscine_42/C03_Project/C04 master
+
+git push
 
 # Pull change made at home to 42 
 # /!\ Too much git conflict I quit ! 
 # I don't recommend to use git subtree to do that
-git subtree push --prefix C02_Project/C02 ../piscine_42/C02_Project/C02 master
+git subtree push --prefix C00_Project/C02 ../piscine_42/C00_Project/C00 master
 ```
 
 
