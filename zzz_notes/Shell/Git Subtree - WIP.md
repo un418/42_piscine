@@ -46,8 +46,8 @@ git subtree pull --prefix C02_Project/C02 ../piscine_42/C02_Project/C02 master
 git subtree add --prefix C03_Project/C03 ../piscine_42/C03_Project/C03 master
 git subtree pull --prefix C03_Project/C03 ../piscine_42/C03_Project/C03 master
 
-git subtree add --prefix C04_Project/C04 ../piscine_42/C03_Project/C04 master
-git subtree pull --prefix C03_Project/C04 ../piscine_42/C03_Project/C04 master
+git subtree add --prefix C04_Project/C04 ../piscine_42/C04_Project/C04 master
+git subtree pull --prefix C04_Project/C04 ../piscine_42/C04_Project/C04 master
 
 git push
 
