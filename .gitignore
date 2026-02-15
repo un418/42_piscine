@@ -1,0 +1,11 @@
+# Ignore default executable file
+a.out
+# Ignore any compilated file
+*.o
+# Ignore any file file that contain test
+*test*
+# Ignore .vscode folder
+.vscode
+
+# Ignored files can be tested this way
+# git ls-files --others --ignored --exclude-standard
