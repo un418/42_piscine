@@ -6,7 +6,7 @@
 /*   By: adaferna <adaferna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/13 12:32:31 by adaferna          #+#    #+#             */
-/*   Updated: 2026/02/13 13:58:12 by adaferna         ###   ########.fr       */
+/*   Updated: 2026/02/15 23:29:57 by adaferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@ int	ft_atoi(char *str)
 
 	i = 0;
 	sign = 0;
+	nb = 0;
 	while (str[i] == 32)
 		i++;
 	while (str[i] == 43 || str[i] == 45)
@@ -39,7 +40,7 @@ int	ft_atoi(char *str)
 	return (nb);
 }
 
-/* void	ft_nb_to_char(unsigned int nb)
+void	ft_nb_to_char(int nb)
 {
 	char	c;
 
@@ -60,30 +61,27 @@ void	ft_putnbr(int nb)
 	if (lnb > 9)
 		ft_putnbr(lnb / 10);
 	ft_nb_to_char(lnb % 10);
-} */
+}
 
 /* 
-#include <stdio.h>
-int main(void)
-{
-	char str_1[50] = " ---+--+1234ab567";
-
-	ft_putnbr(ft_atoi(str_1));
-	
-	return 0;
-} */
-
-
 // Main with argv
 #include <stdio.h>
 int main(int argc, char *argv[])
 {
 	// printf("argc=%d",argc);
 	if (argc != 2)
+	{
 		printf("Only one argument authorized");
+		return (1); 
+	}
 	
-	//ft_putnbr(ft_atoi(argv[1]));
-
-	printf("%d", ft_atoi(argv[1]));
-	return 0;
+	ft_putnbr(ft_atoi(argv[1]));
+	return (0);
 }
+ */
+
+// ./a.out " ---+--+---+--+30255874238785468ab567ab567"
+// -1813436484
+// ./a.out " ---+-+-2147483648"
+// 
+// ./a.out "2147483647"
