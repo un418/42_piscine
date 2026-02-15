@@ -6,7 +6,7 @@
 /*   By: adaferna <adaferna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/11 14:28:50 by adaferna          #+#    #+#             */
-/*   Updated: 2026/02/15 21:47:41 by adaferna         ###   ########.fr       */
+/*   Updated: 2026/02/15 23:09:05 by adaferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,20 +19,20 @@ The function must be able to handle all possible values of the int type.
 
 void	ft_nb_to_char(unsigned int nb)
 {
-	char c = '0' + nb;
-	write(1 , &c, 1);
+	char	c;
+
+	c = '0' + nb;
+	write (1, &c, 1);
 }
-	// Other way to do
-	// char c = 48 + nb;
-	//write(1, &"0123456789"[nb], 1);
-	
+
 void	ft_putnbr(int nb)
 {
-	long lnb;
+	long	lnb;
+
 	lnb = nb;
 	if (nb < 0)
 	{
-		write(1 , "-", 1);
+		write (1, "-", 1);
 		lnb = lnb * -1;
 	}
 	if (lnb > 9)
@@ -40,12 +40,13 @@ void	ft_putnbr(int nb)
 	ft_nb_to_char(lnb % 10);
 }
 
+/* 
 #include <stdio.h>
 int main(void)
 {
-	int number = 125;
+	// int number = 125;
 	// int number = 12;
-	// int number = -2147483648;
+	int number = -2147483648;
 	// int number = 2147483647;
 	// int number = -1;
 	// int number;
@@ -55,6 +56,7 @@ int main(void)
 	ft_putnbr(number);
 	return 0;
 }
+ */
 
 /* 
 Understand recursivity:
