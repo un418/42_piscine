@@ -6,7 +6,7 @@
 /*   By: adaferna <adaferna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/10 20:39:50 by adaferna          #+#    #+#             */
-/*   Updated: 2026/02/15 21:45:15 by adaferna         ###   ########.fr       */
+/*   Updated: 2026/02/15 23:02:59 by adaferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@ int	ft_strlen(char *str)
 {
 	int	i;
 
+	i = 0;
 	while (str[i])
 	{
 		str++;
