@@ -6,21 +6,19 @@
 /*   By: adaferna <adaferna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/10 20:39:50 by adaferna          #+#    #+#             */
-/*   Updated: 2026/02/10 20:45:47 by adaferna         ###   ########.fr       */
+/*   Updated: 2026/02/15 21:45:15 by adaferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_strlen(char *str)
 {
-	int	counter;
+	int	i;
 
-	counter = 0;
-	while (*str)
+	while (str[i])
 	{
 		str++;
-		counter++;
 	}
-	return (counter);
+	return (i);
 }
 
 /* 
