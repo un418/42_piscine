@@ -6,7 +6,7 @@
 /*   By: adaferna <adaferna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/09 17:58:13 by adaferna          #+#    #+#             */
-/*   Updated: 2026/02/10 15:33:24 by adaferna         ###   ########.fr       */
+/*   Updated: 2026/02/16 15:41:50 by adaferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,15 +23,12 @@ DESCRIPTION
 
 int	ft_strlen(char *str)
 {
-	int	counter;
+	int	i;
 
-	counter = 0;
-	while (*str)
-	{
-		str++;
-		counter++;
-	}
-	return (counter);
+	i = 0;
+	while (str[i])
+		i++;
+	return (i);
 }
 
 char	*ft_strcat(char *dest, char *src)
@@ -50,26 +47,22 @@ char	*ft_strcat(char *dest, char *src)
 	return (dest);
 }
 
-/* #include <stdio.h>
+/* 
+#include <stdio.h>
 int main(void)
 {
-	// char src[]="";
-	// char dst[]="\n";
-	//
+	char str1[50] = "Segmentation";
+	char str2[] = "_Fault";
+	char str3[50] = "Stack";
+	char str4[] = "+Overflow";
+	char *str5 = "";
+	char str6[] = "";
 
-	char src[10]="";
-	char dst[10]="";
-	//
+	printf("debug:%s\n",ft_strcat(str1,str2));
+	printf("debug:%s\n",ft_strcat(str3,str4));
+	printf("debug:%s\n",ft_strcat(str5,str5));
+	// printf("debug_RO_str:%s\n",ft_strcat(str5,str1)); // Segfault hehe
 
-	// char src[50]="Segmentation";
-	// char dst[50]="_Fault";
-	// 0
-
-	// char src[50]="Stack";
-	// char dst[50]="+Overflow";
-	// 0 
-
-	printf("debug:%s",ft_strcat(dst,src));
 	return 0;
 }
  */

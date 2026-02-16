@@ -6,7 +6,7 @@
 /*   By: adaferna <adaferna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/09 17:58:13 by adaferna          #+#    #+#             */
-/*   Updated: 2026/02/10 19:05:59 by adaferna         ###   ########.fr       */
+/*   Updated: 2026/02/16 15:52:48 by adaferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,15 +23,12 @@ DESCRIPTION
 
 int	ft_strlen(char *str)
 {
-	int	counter;
+	int	i;
 
-	counter = 0;
-	while (*str)
-	{
-		str++;
-		counter++;
-	}
-	return (counter);
+	i = 0;
+	while (str[i])
+		i++;
+	return (i);
 }
 
 char	*ft_strncat(char *dest, char *src, unsigned int nb)
@@ -54,27 +51,21 @@ char	*ft_strncat(char *dest, char *src, unsigned int nb)
 #include <stdio.h>
 int main(void)
 {
-	// unsigned int size = 0;
-	// char src[]="";
-	// char dst[]="\n";
+	char str1[50] = "Segmentation";
+	char str2[] = "_Fault";
+	char str3[50] = "Stack";
+	char str4[] = "+Overflow";
+	char *str5 = "";
+	// char str6[] = "";
 
+	printf("debug:%s\n",ft_strncat(str1,str2,4));
+	printf("debug_under:%s\n",ft_strncat(str3,str4,5));
+	printf("debug_over_null:%s\n",ft_strncat(str5,str5,3));
+	// printf("debug_over_src:%s\n",ft_strncat(str1,str2,10));
+		// if (nb > ft_strlen(src)) == Segfault
+	// printf("debug_RO_str:%s\n",ft_strncat(str5,str1));
+		// Write on RO string == Segfault 
 
-	// unsigned int size = 10;
-	// char src[10]="";
-	// char dst[10]="";
-
-
-	// unsigned int size = 3;
-	// char src[50]="Segmentation";
-	// char dst[50]="_Fault";
-
-
-	unsigned int size = 3;
-	char src[50]="Stack";
-	char dst[50]="+Overflow";
-
-
-	printf("debug:%s",ft_strncat(dst,src,size));
 	return 0;
 }
  */
