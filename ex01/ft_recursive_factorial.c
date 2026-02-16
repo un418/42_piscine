@@ -6,7 +6,7 @@
 /*   By: adaferna <adaferna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/15 22:24:25 by adaferna          #+#    #+#             */
-/*   Updated: 2026/02/15 22:56:23 by adaferna         ###   ########.fr       */
+/*   Updated: 2026/02/16 00:38:03 by adaferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,7 @@ int	ft_recursive_factorial(int nb)
 	return (fact);
 }
 
+/* 
 #include <stdio.h>
 int	main(void)
 {
@@ -53,3 +54,4 @@ int	main(void)
 	}
 	return (0);
 }
+ */
