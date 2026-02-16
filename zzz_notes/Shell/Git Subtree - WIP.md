@@ -62,3 +62,15 @@ git subtree push --prefix C00_Project/C02 ../piscine_42/C00_Project/C00 master
 
 
 
+```bash
+
+git subtree pull --prefix SH00_Project/SH00 ../piscine_42/SH00_Project/SH00 master
+git subtree pull --prefix SH01_Project/SH01 ../piscine_42/SH01_Project/SH01 master
+git subtree pull --prefix C01_Project/C01 ../piscine_42/C01_Project/C01 master
+git subtree pull --prefix C02_Project/C02 ../piscine_42/C02_Project/C02 master
+git subtree pull --prefix C03_Project/C03 ../piscine_42/C03_Project/C03 master
+git subtree pull --prefix C04_Project/C04 ../piscine_42/C04_Project/C04 master
+git subtree pull --prefix C05_Project/C05 ../piscine_42/C05_Project/C05 master
+
+git push
+```
