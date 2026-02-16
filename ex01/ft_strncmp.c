@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: adaferna <adaferna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/02/09 17:56:45 by adaferna          #+#    #+#             */
-/*   Updated: 2026/02/10 14:42:53 by adaferna         ###   ########.fr       */
+/*   Created: 2026/02/09 17:56:10 by adaferna          #+#    #+#             */
+/*   Updated: 2026/02/16 14:36:58 by adaferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,75 +18,51 @@ strcmp() returns an integer indicating the result of the comparison, as follows
        • a positive value if s1 is greater than s2.
 The strncmp() function is similar,
 except it compares only the first (at most) n bytes of s1 and s2.
-*/
 
-/* 
-NOTE
-Always be carefull with index
-- always start at 0
-- never should be negative -> seg fault
+MORE DETAILLED INFO
+- https://www.w3schools.com/c/ref_string_strncmp.php
 */
 
 int	ft_strncmp(char *s1, char *s2, unsigned int n)
 {
 	unsigned int	i;
-	int				diff;
 
 	i = 0;
-	diff = 0;
-	if (n != 0)
+	while ((s1[i] || s2[i]) && i <= n && n != 0)
 	{
-		while (s1[i] && i <= n)
-		{
-			diff = diff + s1[i];
+		if (s1[i] == s2[i])
 			i++;
-		}
-		i = 0;
-		while (s2[i] && i <= n)
-		{
-			diff = diff - s2[i];
-			i++;
-		}
+		else
+			return (s1[i] - s2[i]);
 	}
-	return (diff);
+	return (0);
 }
+
 /* 
 #include <stdio.h>
 int main(void)
 {
-	// https://www.ascii-code.com/
-
+	
 	char str1[]="Hello";
-	char str2[]="Hello";
-	unsigned int n = 5;
-	// 0
+	char str2[]="Hello0";
+	char str3[]="";
+	
+	
+	printf("debug_equal:%d\n",ft_strncmp(str1,str1,4));
+	printf("debug_equal_under:%d\n",ft_strncmp(str1,str1,2));
+	printf("debug_equal_over:%d\n",ft_strncmp(str1,str1,6));
 
-	// char str1[]="Hello0";
-	// char str2[]="Hello";
-	// unsigned int n = 4;
-	// 0
+	printf("debug_s1<s2:%d\n",ft_strncmp(str1,str2,5));
+	printf("debug_s1<s2_under:%d\n",ft_strncmp(str1,str2,3));
+	printf("debug_s1<s2_over:%d\n",ft_strncmp(str1,str2,6));
 
-	// char str1[]="Hello";
-	// char str2[]="Hello0";
-	// unsigned int n = 5;
-	// -48
 
-	// char str1[]="";
-	// char str2[]="";
-	// unsigned int n = 3;
-	// 0
+	printf("debug_s1>s2_over:%d\n",ft_strncmp(str1,str3,4));
+	printf("debug_s1>s2_null:%d\n",ft_strncmp(str1,str3,0));
 
-	// char str1[]="H";
-	// char str2[]="";
-	// unsigned int n = 0;
-	// 0
-
-	// char str1[]="";
-	// char str2[]="q";
-	// unsigned int n = 1;
-	// -113
-
-	printf("debug:%d",ft_strncmp(str1,str2,n));
+	printf("debug_null_over:%d\n",ft_strncmp(str3,str3,4));
+	printf("debug_null_rev:%d\n",ft_strncmp(str2,str3,0));
+	
 	return 0;
 }
  */
