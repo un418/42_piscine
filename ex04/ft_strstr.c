@@ -6,7 +6,7 @@
 /*   By: adaferna <adaferna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/10 19:08:57 by adaferna          #+#    #+#             */
-/*   Updated: 2026/02/16 17:39:05 by adaferna         ###   ########.fr       */
+/*   Updated: 2026/02/16 21:29:01 by adaferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,8 @@ char	*ft_strstr(char *str, char *to_find)
 
 	i = 0;
 	count = 0;
+	if (ft_strlen(to_find) == 0)
+		return (str);
 	len_to_find = ft_strlen(to_find);
 	while (str[i] && to_find[count])
 	{
@@ -112,7 +114,7 @@ int main(void)
 
 	char to_find4[]="";
 	char str4[]="123test";
-	printf("debug_target:%p\n",NULL);
+	printf("debug_target:%p\n",str4);
 	printf("debug_output:%p\n",ft_strstr(str4,to_find4));
 
 	char to_find5[]="A";
