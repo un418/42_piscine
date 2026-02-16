@@ -6,7 +6,7 @@
 /*   By: adaferna <adaferna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/09 17:56:10 by adaferna          #+#    #+#             */
-/*   Updated: 2026/02/16 22:36:32 by adaferna         ###   ########.fr       */
+/*   Updated: 2026/02/16 22:40:02 by adaferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ int	ft_strncmp(char *s1, char *s2, unsigned int n)
 	unsigned int	i;
 
 	i = 0;
-	while ((s1[i] || s2[i] ) && i < n)
+	while ((s1[i] || s2[i]) && i < n)
 	{
 		if (s1[i] == s2[i])
 			i++;
