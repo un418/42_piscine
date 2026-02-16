@@ -6,58 +6,50 @@
 /*   By: adaferna <adaferna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/16 17:41:04 by adaferna          #+#    #+#             */
-/*   Updated: 2026/02/16 20:35:41 by adaferna         ###   ########.fr       */
+/*   Updated: 2026/02/16 22:01:17 by adaferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /* 
 strlcpy() and strlcat() take the full size of the buffer (not just the length)
 and guarantee to NUL-terminate the result 
-(as long as size is larger than 0 or, in the case of strlcat(),as long as there is at least one byte free in dst).
+in the case of strlcat(),as long as there is at least one byte free in dst).
 Note that a byte for the NUL should be included in size..
 
 - for strlcpy() src must be NUL-terminated and 
 - for strlcat() both src and dst must be NUL-terminated.
 
-The strlcpy() function copies up to size - 1 characters from the NUL-terminated string src to dst, NUL-terminating the result.
-
 The strlcat() function appends the NUL-terminated string src to the end of dst.
-It will append at most size - strlen(dst) - 1 bytes, NUL-terminating the result.
+It will append at most size - strlen(dst) - 1 bytes, NUL-terminating the result
 
 Return Values
-The strlcpy() and strlcat() functions return the total length of the string they tried to create.
-For strlcpy() that means the length of src.
+strlcat() functions return the total length of the string they tried to create.
 For strlcat() that means the initial length of dst plus the length of src.
-While this may seem somewhat confusing, it was done to make truncation detection simple.
+While this may seem somewhat confusing,
+it was done to make truncation detection simple.
 
-Note, however, that if strlcat() traverses size characters without finding a NUL,
-the length of the string is considered to be size and the destination string will not be NUL-terminated
-(since there was no space for the NUL).
-This keeps strlcat() from running off the end of a string.
-In practice this should not happen (as it means that either size is incorrect or that dst is not a proper ''C'' string).
-The check exists to prevent potential security problems in incorrect code. 
 */
 
 int	ft_strlen(char *str)
 {
 	int	i;
-	
+
 	i = 0;
 	while (str[i])
-	i++;
+		i++;
 	return (i);
 }
 
-unsigned int ft_strlcat(char *dest, char *src, unsigned int size)
+unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 {
 	unsigned int	i;
 	int				len;
 
 	i = 0;
 	len = ft_strlen(dest);
-	if (size != 0 )
+	if (size != 0)
 	{
-		while (src[i] && i < (size - 1 - len)) // as long as there is at least one byte free in dst
+		while (src[i] && i < (size - 1 - len))
 		{
 			dest[len + i] = src[i];
 			i++;
@@ -73,8 +65,9 @@ int main(void)
 {
 	char str1[50] = "Segmentation";
 	char str2[] = "_Fault";
-	char str3[8] = "Stack";
+	char str3[10] = "Stack";
 	char *str4 = "";
+	printf("%s",str4);
 	char str5[] = "+Overflow";
 	// char *str5 = "";
 	// char str6[] = "";
@@ -116,10 +109,7 @@ int main(void)
 	printf("debug_sizeof_dst:%lu\n",sizeof(str3));
 	printf("debug_dst_str:%s\n",str3);
 
-	// printf("debug:%s\n",ft_strlcat(str1,str2));
-	// printf("debug:%s\n",ft_strlcat(str3,str4));
-	// printf("debug:%s\n",ft_strlcat(str5,str5));
-	// printf("debug_RO_str:%s\n",ft_strcat(str5,str1)); // SegFault ahah
 	return 0;
 }
+
  */
