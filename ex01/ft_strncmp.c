@@ -6,7 +6,7 @@
 /*   By: adaferna <adaferna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/09 17:56:10 by adaferna          #+#    #+#             */
-/*   Updated: 2026/02/16 14:36:58 by adaferna         ###   ########.fr       */
+/*   Updated: 2026/02/16 22:36:32 by adaferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ int	ft_strncmp(char *s1, char *s2, unsigned int n)
 	unsigned int	i;
 
 	i = 0;
-	while ((s1[i] || s2[i]) && i <= n && n != 0)
+	while ((s1[i] || s2[i] ) && i < n)
 	{
 		if (s1[i] == s2[i])
 			i++;
@@ -44,15 +44,16 @@ int main(void)
 {
 	
 	char str1[]="Hello";
-	char str2[]="Hello0";
+	char str2[]="Hello1";
 	char str3[]="";
+	char str4[]="Hello9";
 	
 	
 	printf("debug_equal:%d\n",ft_strncmp(str1,str1,4));
 	printf("debug_equal_under:%d\n",ft_strncmp(str1,str1,2));
 	printf("debug_equal_over:%d\n",ft_strncmp(str1,str1,6));
 
-	printf("debug_s1<s2:%d\n",ft_strncmp(str1,str2,5));
+	printf("debug_s1<s2:%d\n",ft_strncmp(str1,str2,9));
 	printf("debug_s1<s2_under:%d\n",ft_strncmp(str1,str2,3));
 	printf("debug_s1<s2_over:%d\n",ft_strncmp(str1,str2,6));
 
@@ -62,7 +63,9 @@ int main(void)
 
 	printf("debug_null_over:%d\n",ft_strncmp(str3,str3,4));
 	printf("debug_null_rev:%d\n",ft_strncmp(str2,str3,0));
-	
+
+	printf("debug_diff_but_n_smaller:%d\n",ft_strncmp(str2,str4,4));
+
 	return 0;
 }
  */
