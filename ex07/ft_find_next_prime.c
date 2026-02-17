@@ -6,7 +6,7 @@
 /*   By: adaferna <adaferna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/17 21:14:10 by adaferna          #+#    #+#             */
-/*   Updated: 2026/02/17 21:30:35 by adaferna         ###   ########.fr       */
+/*   Updated: 2026/02/17 22:30:07 by adaferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,8 @@ int	ft_is_prime(int nb)
 	int	i;
 
 	i = 2;
+	if ( nb <= 1)
+		return (0);
 	while (i < nb)
 	{
 		if (nb % i == 0)

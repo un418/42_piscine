@@ -6,7 +6,7 @@
 /*   By: adaferna <adaferna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/17 19:31:02 by adaferna          #+#    #+#             */
-/*   Updated: 2026/02/17 22:21:25 by adaferna         ###   ########.fr       */
+/*   Updated: 2026/02/17 22:29:29 by adaferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ In other words, prime numbers are positive integers greater than 1
 	with exactly two factors, 1 and the number itself.
 
 So if we can modulo 0 from 2 to n-1 means its a not prime number.
+
+/!\ 1 is not a prime number
 */
 
 int	ft_is_prime(int nb)
