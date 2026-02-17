@@ -6,7 +6,7 @@
 /*   By: adaferna <adaferna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/11 14:28:50 by adaferna          #+#    #+#             */
-/*   Updated: 2026/02/15 23:09:05 by adaferna         ###   ########.fr       */
+/*   Updated: 2026/02/17 00:34:29 by adaferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ The function must be able to handle all possible values of the int type.
 
 #include <unistd.h>
 
-void	ft_nb_to_char(unsigned int nb)
+void	ft_nb_to_char(int nb)
 {
 	char	c;
 
@@ -46,11 +46,11 @@ int main(void)
 {
 	// int number = 125;
 	// int number = 12;
-	int number = -2147483648;
+	// int number = -2147483648;
 	// int number = 2147483647;
-	// int number = -1;
+	int number = -1;
 	// int number;
-	// int number = 30255874238785468;
+	// int number = -2147483649;
 	// int number = -30255874238785468;
 
 	ft_putnbr(number);
