@@ -6,7 +6,7 @@
 /*   By: adaferna <adaferna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/17 18:34:27 by adaferna          #+#    #+#             */
-/*   Updated: 2026/02/17 19:23:48 by adaferna         ###   ########.fr       */
+/*   Updated: 2026/02/17 22:26:45 by adaferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ when multiplied by itself ( x*x or x^2), equals the original number
 Formula : n = x * x
 */
 
+
 int	ft_sqrt(int nb)
 {
 	int	sqrt;
@@ -32,7 +33,7 @@ int	ft_sqrt(int nb)
 	sqrt = 1;
 	if (nb < 0)
 		return (0);
-	while (sqrt < nb)
+	while (sqrt <= nb)
 	{
 		if ((sqrt * sqrt) == nb)
 			return (sqrt);
@@ -47,11 +48,11 @@ int ft_sqrt(int nb)
 {
 	int	sqrt;
 
-	sqrt = 3;
+	sqrt = 1;
 	if (nb < 0 )
 		return (0);
 
-	while (sqrt < nb )
+	while (sqrt <= nb )
 	{
 		if ((nb / sqrt == sqrt) && (nb % sqrt == 0 ))
 			return (sqrt);
@@ -65,8 +66,8 @@ int ft_sqrt(int nb)
 #include <stdio.h>
 int main(void)
 {
-	int i = 0;
-	while (i < 1000)
+	int i = -12;
+	while (i < 100)
 	{
 		if (ft_sqrt(i) > 0) // Avoid to print not find sqrt
 		printf("sqrt of %d = %d\n", i, ft_sqrt(i));
