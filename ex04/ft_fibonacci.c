@@ -6,7 +6,7 @@
 /*   By: adaferna <adaferna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/17 16:23:26 by adaferna          #+#    #+#             */
-/*   Updated: 2026/02/17 17:01:08 by adaferna         ###   ########.fr       */
+/*   Updated: 2026/02/17 18:27:41 by adaferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,18 +31,29 @@ Fibonacci number;
 
 int	ft_fibonacci(int index)
 {
-	int fibo;
+	int	fibo;
 
 	fibo = index;
 	if (index < 0)
 		return (-1);
-	if (0 < index )
+	if (index == 0)
+		return (0);
+	if (1 < index)
 	{
 		fibo = ft_fibonacci(index - 1) + ft_fibonacci(index - 2);
 	}
 	return (fibo);
 }
 
+/* 
+#include <stdio.h>
+int main(void)
+{
+	printf("debug:%d\n",ft_fibonacci(5));
+}
+ */
+
+/* 
 #include <stdio.h>
 int main(void)
 {
@@ -51,11 +62,11 @@ int main(void)
 	n = 0 ;
 	while (n <= 10)
 	{
-		printf("debug:%d\n",ft_fibonacci(n));
+		printf("index:%d - value:%d\n",n,ft_fibonacci(n));
 		n++;
 	}
 }
-
+ */
 
 /* 
 Index	Value
