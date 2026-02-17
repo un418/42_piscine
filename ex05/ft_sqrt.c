@@ -6,13 +6,13 @@
 /*   By: adaferna <adaferna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/17 18:34:27 by adaferna          #+#    #+#             */
-/*   Updated: 2026/02/17 18:56:38 by adaferna         ###   ########.fr       */
+/*   Updated: 2026/02/17 19:23:48 by adaferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /* 
-Create a function that returns the square root of a given number (if it exists), or 0
-if the square root is an irrational number.
+Create a function that returns the square root of a given number (if it exists)
+or 0 if the square root is an irrational number.
 
 irrational number:
 - infinite floating number like PI or 1/3=0.33333333.....
@@ -22,15 +22,55 @@ Square roots:
 - A square root of a number is a value that,
 when multiplied by itself ( x*x or x^2), equals the original number
 
-n = x * x
+Formula : n = x * x
 */
 
+int	ft_sqrt(int nb)
+{
+	int	sqrt;
+
+	sqrt = 1;
+	if (nb < 0)
+		return (0);
+	while (sqrt < nb)
+	{
+		if ((sqrt * sqrt) == nb)
+			return (sqrt);
+		sqrt++;
+	}
+	return (0);
+}
+
+/* 
+// Another way to do
 int ft_sqrt(int nb)
 {
+	int	sqrt;
 
+	sqrt = 3;
+	if (nb < 0 )
+		return (0);
+
+	while (sqrt < nb )
+	{
+		if ((nb / sqrt == sqrt) && (nb % sqrt == 0 ))
+			return (sqrt);
+		sqrt++;
+	}
+	return (0);
 }
+ */
 
+/* 
+#include <stdio.h>
 int main(void)
 {
-	printf("sqrt of 9 = %d",ft_sqrt(9));
+	int i = 0;
+	while (i < 1000)
+	{
+		if (ft_sqrt(i) > 0) // Avoid to print not find sqrt
+		printf("sqrt of %d = %d\n", i, ft_sqrt(i));
+		i++;
+	}
 }
+ */
