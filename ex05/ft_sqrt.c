@@ -6,7 +6,7 @@
 /*   By: adaferna <adaferna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/17 18:34:27 by adaferna          #+#    #+#             */
-/*   Updated: 2026/02/18 00:21:27 by adaferna         ###   ########.fr       */
+/*   Updated: 2026/02/18 01:30:31 by adaferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,9 +32,12 @@ int	ft_sqrt(int nb)
 	sqrt = 1;
 	if (nb < 0)
 		return (0);
-	while (sqrt++ <= nb)
+	while (sqrt <= nb)
+	{
 		if ((sqrt * sqrt) == nb)
 			return (sqrt);
+		sqrt++;
+	}
 	return (0);
 }
 
@@ -66,8 +69,7 @@ int main(void)
 	while (i < 100)
 	{
 		if (ft_sqrt(i) > 0) // Avoid to print not find sqrt
-		printf("sqrt of %d = %d\n", i, ft_sqrt(i));
+			printf("sqrt of %d = %d\n", i, ft_sqrt(i));
 		i++;
 	}
-}
- */
+} */
