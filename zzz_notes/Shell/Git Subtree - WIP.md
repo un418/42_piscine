@@ -52,6 +52,9 @@ git subtree pull --prefix C04_Project/C04 ../piscine_42/C04_Project/C04 master
 git subtree add --prefix C05_Project/C05 ../piscine_42/C05_Project/C05 master
 git subtree pull --prefix C05_Project/C05 ../piscine_42/C05_Project/C05 master
 
+git subtree add --prefix C06_Project/C06 ../piscine_42/C06_Project/C06 master
+git subtree pull --prefix C06_Project/C06 ../piscine_42/C06_Project/C06 master
+
 git push
 
 # Pull change made at home to 42 
@@ -71,6 +74,6 @@ git subtree pull --prefix C02_Project/C02 ../piscine_42/C02_Project/C02 master
 git subtree pull --prefix C03_Project/C03 ../piscine_42/C03_Project/C03 master
 git subtree pull --prefix C04_Project/C04 ../piscine_42/C04_Project/C04 master
 git subtree pull --prefix C05_Project/C05 ../piscine_42/C05_Project/C05 master
-
+git subtree pull --prefix C06_Project/C06 ../piscine_42/C06_Project/C06 master
 git push
 ```
