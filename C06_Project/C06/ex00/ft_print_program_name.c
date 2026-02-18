@@ -6,11 +6,13 @@
 /*   By: adaferna <adaferna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/18 00:52:04 by adaferna          #+#    #+#             */
-/*   Updated: 2026/02/18 00:53:50 by adaferna         ###   ########.fr       */
+/*   Updated: 2026/02/18 01:50:54 by adaferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 // Write a program that displays its own name, followed by a new line.
+
+#include <unistd.h>
 
 void	ft_putstr(char *str)
 {
@@ -18,8 +20,10 @@ void	ft_putstr(char *str)
 		write(1, str++, 1);
 }
 
+// /!\ Mandatory to use argc for the compiler
 int	main(int argc, char **argv)
 {
+	argc = 99;
 	ft_putstr(argv[0]);
 	write(1, "\n", 1);
 }
