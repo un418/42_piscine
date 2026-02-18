@@ -6,12 +6,11 @@
 /*   By: adaferna <adaferna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/17 23:11:51 by adaferna          #+#    #+#             */
-/*   Updated: 2026/02/18 00:10:10 by adaferna         ###   ########.fr       */
+/*   Updated: 2026/02/18 00:50:43 by adaferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /* 
-Since this is a program, your .c file must contain a main function.
 • Write a program that displays its given arguments.
 • Each argument should be printed on a new line,
 in the same order as in the command line.
