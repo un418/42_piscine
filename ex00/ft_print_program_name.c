@@ -6,7 +6,7 @@
 /*   By: adaferna <adaferna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/18 00:52:04 by adaferna          #+#    #+#             */
-/*   Updated: 2026/02/18 01:42:39 by adaferna         ###   ########.fr       */
+/*   Updated: 2026/02/19 20:22:08 by adaferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,6 @@ void	ft_putstr(char *str)
 // /!\ Mandatory to use argc for the compiler
 int	main(int argc, char **argv)
 {
-	argc = 99;
-	ft_putstr(argv[0]);
+	ft_putstr(argv[argc - argc]);
 	write(1, "\n", 1);
 }
