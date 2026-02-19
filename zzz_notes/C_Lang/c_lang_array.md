@@ -86,7 +86,7 @@ void ft_putstr(char *str)
 }
 ```
 
-### Modifying an array from memory address
+### Modifying an array from memory address (aka. pointer)
 
 ```c
 char	*ft_strlowcase(char *str)
