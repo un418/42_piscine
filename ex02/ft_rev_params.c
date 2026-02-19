@@ -6,7 +6,7 @@
 /*   By: adaferna <adaferna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/18 00:32:32 by adaferna          #+#    #+#             */
-/*   Updated: 2026/02/18 01:44:16 by adaferna         ###   ########.fr       */
+/*   Updated: 2026/02/19 20:13:50 by adaferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,24 +22,11 @@ void	ft_putstr(char *str)
 
 int	main(int argc, char **argv)
 {
-	while (argc-- > 1)
+	while (argc > 1)
 	{
-		ft_putstr(argv[argc]);
+		ft_putstr(argv[argc--]);
 		write(1, "\n", 1);
 	}
 }
 
 // ./a.out 1 2 3 4 5 6
-
-/* 
-#include <stdio.h>
-int	main(int argc, char **argv)
-{
-	while (argc-- > 1)
-	{
-		ft_putstr(argv[argc]);
-		write(1, "\n", 1);
-		printf("argc=%d\n", argc);
-	}
-}
- */
