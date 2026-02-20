@@ -1,9 +1,17 @@
+# Before the Exam
+
+
+> [!IMPORTANT]
+> - Register to the Exam Project
+> - Subscribe to the Exam event in Agenda
+> 
+If you forget to do one of these action there will be **no Exam for you**
 
 # 1. Login to the exam session
 
-* Login: exam
-* Password: exam
-# 2. Login to Examshell
+* Login: `exam`
+* Password:  `exam`
+# 2. Login to `examshell`
 
 > [!CAUTION] 
 > You have only **ten minutes** to do this step after that you will be **kicked out of the exam**.
@@ -33,7 +41,7 @@
 
 You will find the subject in the folder : `/exam/subject/<exercice_name>/<exercice_name>.txt`
 
-> [!CAUTION] 
+> [!IMPORTANT] 
 > You must git push the result of your exercise with the **same folder structure** but in `/exam/rendu`
 > ```
 > /exam/subject/print_a/print_a.txt
@@ -58,14 +66,14 @@ else
 ```
 
 
-> [!TIP] 
-> If you **fail** a `grademe`
-> You can find useful **debug information** in `/exam/traces`
+> [!IMPORTANT] 
+If you **fail** a `grademe`
+You can find useful **debug information** in `/exam/traces`
 
 > [!TIP] 
-> **42 Header are not checked for the exam**
-> Don't waste time with them
-> But it's always good to know [how to put them](zzz_notes/42/42 Header)
+**42 Header are not checked for the exam**
+Not mandatory to put them
+But it's always good to know [how to put them](zzz_notes/42/42 Header)
 
 # Survival commands
 
@@ -78,6 +86,8 @@ man -k pointer  # Not sure you will find but at least try
 man 2 write     # contains the  #include <unistd.h>
 man 3 printf    # contains the  #include <stdio.h>
 man 2 execve    # usefull snippets of 'main(int argc, char *argv[])' at the end of the page
+man ascii       # ASCII Table
+man strcpy      # Snippets of code for reading string
 ```
 
 ## Git Basics
@@ -96,6 +106,13 @@ git remove --cached <fileToRemove> #from git  repository
 ## ~/.zshrc
 
 ```bash
+# To improve zsh prompt - Current Folder + Autocompletion
+cp /etc/zsh/newuser.zshrc.recommended ~/.zshrc
+# at least just remember that the file is in
+ls /etc/zsh
+```
+
+```bash
 # Only 1 aliases to learn by earth
 alias cc42='cc -g -Wall -Wextra -Werror *.c' #
 alias ccrun42='cc -g -Wall -Wextra -Werror *.c && ./a.out' 
@@ -103,10 +120,6 @@ alias ccrun42='cc -g -Wall -Wextra -Werror *.c && ./a.out'
 # Allow more history size
 export HISTSIZE=10000 
 export SAVEHIST=10000
-
-# Not Tested for the moment - To improve zsh prompt - 
-# Find some interesting pattern here : 
-# /etc/profiles , /etc/zsh/newuser.zshrc.recommended , cat /etc/bash.bashrc 
 
 # ---------------------------------------------------------------------------#
 					# Less Usefull but good to know  #
@@ -119,7 +132,7 @@ alias ga="git add"
 alias gst="git status"
 alias gcmsg="git commit -m"
 alias gp="git push"
-alias gl1="git log --oneline"
+alias glo="git log --oneline"
 ```
 
 ## ~/.vimrc

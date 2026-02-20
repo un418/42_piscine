@@ -19,7 +19,7 @@ Create a monorepo with all project repo and keep the commit history to have gree
 
 > [!Warning] Very dangerous to do it in the real work folder
 > One error or git conflict and it will be hours or trying repairaing the git history
-> * Better to  the git subtree ontry copy of the work folder
+> * Better to  try the git subtree on a copy of the work folder
 > * Better to do it at the end piscine to avoid wasting time on git conflict
 > * Better to it only in one way just pulling from the mono repo.
 > 	* If you want to push changes from home, I recommend to create a GH repo per project and add a new github remote on  42 computer and simply pull from GH to retrieve home work
