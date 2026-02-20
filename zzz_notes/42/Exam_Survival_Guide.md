@@ -65,7 +65,7 @@ else
 ```
 
 
-> [!IMPORTANT] 
+> [!WARNING] 
 If you **fail** a `grademe`
 You can find useful **debug information** in `/exam/traces`
 
