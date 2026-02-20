@@ -1,11 +1,10 @@
 # Before the Exam
 
-
 > [!IMPORTANT]
-> - Register to the Exam Project
-> - Subscribe to the Exam event in Agenda
+> * Register to the Exam Project
+> * Subscribe to the Exam event in Agenda
 > 
-If you forget to do one of these action there will be **no Exam for you**
+> If you forget to do one of these action there will be **no Exam for you**
 
 # 1. Login to the exam session
 
@@ -25,14 +24,14 @@ If you forget to do one of these action there will be **no Exam for you**
 > [!WARNING]
 > **Nothing appear when you type your password** it's normal, reuse `examshell` command if you fail at first try
 
+2. Just after login successfully the script will create your ssh key for the exam
+	* type : `y` when there is some questions
+		
 > [!TIP] 
 > **Now you are safe !**
 > You entered the exam no one will kick you out of it.
 > You got 4h hours to beat the `grademe` command
 
-2. Just after login successfully the script will create your ssh key for the exam
-		type : `y` when there is some questions
-		
 3. `examshell` subcommand
 	- `grademe` : When you sure you finished your exercise to send it to Moulinette, be graded and access the next exercise
 	- `status`: used to know how many time left to finish the exam
@@ -48,7 +47,7 @@ You will find the subject in the folder : `/exam/subject/<exercice_name>/<exerci
 > /exam/rendu/print_a/print_a.c
 > ```
 
-push file to git when you finished the exercise.
+`push` file to git when you finished the exercise.
 
 After `git push` :
 	go to the terminal were you have you `examshell` still running
@@ -71,9 +70,7 @@ If you **fail** a `grademe`
 You can find useful **debug information** in `/exam/traces`
 
 > [!TIP] 
-**42 Header are not checked for the exam**
-Not mandatory to put them
-But it's always good to know [how to put them](zzz_notes/42/42 Header)
+> **42 Header are not checked for the exam**
 
 # Survival commands
 
