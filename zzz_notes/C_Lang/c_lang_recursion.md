@@ -5,6 +5,8 @@
 > [!IMPORTANT]
 > **Must read**
 > https://www.geeksforgeeks.org/c/c-recursion/
+> **Must Watch**
+> https://www.youtube.com/watch?v=4W6CTp1eBe0
 > 
 
 ## Applications of Recursion

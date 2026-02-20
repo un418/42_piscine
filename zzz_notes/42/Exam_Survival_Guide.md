@@ -40,16 +40,16 @@
 
 You will find the subject in the folder : `/exam/subject/<exercice_name>/<exercice_name>.txt`
 
-> [!IMPORTANT] 
+> [!WARNING] 
 > You must git push the result of your exercise with the **same folder structure** but in `/exam/rendu`
 > ```
 > /exam/subject/print_a/print_a.txt
 > /exam/rendu/print_a/print_a.c
 > ```
 
-`push` file to git when you finished the exercise.
+* `git push` file to git when you finished the exercise.
 
-After `git push` :
+* After `git push` :
 	go to the terminal were you have you `examshell` still running
 		use the command  `grademe`
 		
@@ -65,7 +65,7 @@ else
 ```
 
 
-> [!WARNING] 
+> [!IMPORTANT] 
 If you **fail** a `grademe`
 You can find useful **debug information** in `/exam/traces`
 
